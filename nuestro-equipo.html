@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestro Equipo - Tu Empresa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* ====== estilos mínimos para skills + email ====== */
+    .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+    .chip{font-size:12px;padding:6px 10px;border:1px solid #273041;background:#0f131b;border-radius:999px;color:#c5ccd3}
+    .card-email{margin-top:10px;font-size:13px;color:#8fa0af}
+    .card-email a{color:inherit;text-decoration:none}
+    .card-email a:hover{text-decoration:underline}
+
+    /* placeholders de carga */
+    .skeleton{background:linear-gradient(90deg,#eee,#f3f3f3,#eee);background-size:200% 100%;animation:sweep 1.2s infinite}
+    @keyframes sweep{0%{background-position:200% 0}100%{background-position:-200% 0}}
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-container">
+    <nav class="menu-fijo">
+      <a href="index.html">Inicio</a>
+      <a href="nuestro-equipo.html">Nuestro Equipo</a>
+      <a href="contacto.html">Contáctanos</a>
+    </nav>
+    <img src="assets/logo.png" alt="Logo" class="logo">
+  </div>
+</header>
+
+<main>
+  <section class="team-section">
+    <h2 class="section-title"><i class="fas fa-users"></i> Nuestro Equipo</h2>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Buscar por nombre, rol o skill...">
+    </div>
+
+    <!-- Grid de miembros (se rellena vía JS) -->
+    <div class="team-container" id="teamContainer"></div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Soluciones Migratorias. Todos los derechos reservados. </p>
+</footer>
+
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a href="https://wa.me/12298468860" class="whatsapp-float" target="_blank" aria-label="Chatea con nosotros en WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- SCRIPTS -->
+<script>
+  const teamContainer = document.getElementById('teamContainer');
+  const searchInput = document.getElementById('searchInput');
+
+  function escapeHTML(str=""){
+    return str.replace(/[&<>\"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
+  }
+
+  function fallbackAvatar(nombre){
+    return "https://api.dicebear.com/9.x/initials/svg?seed=" + encodeURIComponent(nombre||"Miembro");
+  }
+
+  function buildCard(p){
+    const nombre = p.Nombre || "Sin nombre";
+    const rol    = p.Rol    || "";
+    const foto   = p.Foto   || fallbackAvatar(nombre);
+    const skills = (p.Skills||"").split(",").map(s=>s.trim()).filter(Boolean);
+    const email  = (p.Email ||"").trim();
+
+    return `
+      <div class="team-card">
+        <img src="${escapeHTML(foto)}" alt="${escapeHTML(nombre)}" onerror="this.src='${fallbackAvatar(nombre)}'">
+        <h3>${escapeHTML(nombre)}</h3>
+        <h4>${escapeHTML(rol)}</h4>
+
+        ${skills.length ? `
+        <div class="chips">
+          ${skills.map(s=>`<span class="chip">${escapeHTML(s)}</span>`).join('')}
+        </div>` : ''}
+
+        ${email ? `
+        <div class="card-email">📧 <a href="mailto:${escapeHTML(email)}">${escapeHTML(email)}</a></div>` : ''}
+
+      </div>`;
+  }
+
+  let DATA = [];
+
+  function render(list){
+    teamContainer.innerHTML = list.map(buildCard).join("");
+  }
+
+  function doSearch(){
+    const q = (searchInput.value||"").toLowerCase();
+    const filtered = DATA.filter(p=>{
+      const haystack = `${p.Nombre||""} ${p.Rol||""} ${p.Skills||""}`.toLowerCase();
+      return haystack.includes(q);
+    });
+    render(filtered);
+  }
+  searchInput.addEventListener('input', doSearch);
+
+  async function loadEquipo(){
+    // placeholders de carga
+    teamContainer.innerHTML = Array.from({length: 12}).map(()=>`
+      <div class="team-card">
+        <div class="skeleton" style="width:100%;aspect-ratio:16/10;border-radius:8px"></div>
+        <h3 class="skeleton" style="height:14px;margin:10px 0;border-radius:6px"></h3>
+        <h4 class="skeleton" style="height:12px;width:60%;border-radius:6px"></h4>
+      </div>
+    `).join("");
+
+    try{
+      const res = await fetch("equipo.json", {cache:"no-store"});
+      if(!res.ok) throw new Error("No se pudo cargar equipo.json");
+      DATA = await res.json();
+      render(DATA);
+    }catch(err){
+      teamContainer.innerHTML = `<div style="padding:16px;border:1px dashed #ccc;border-radius:8px;color:#666">
+        ⚠️ Error cargando datos: ${escapeHTML(err.message)}<br>
+        Verifica que <code>equipo.json</code> esté junto a este HTML y que las fotos existan en <code>assets/fotos/</code>.
+      </div>`;
+    }
+  }
+
+  loadEquipo();
+</script>
+</body>
+</html>

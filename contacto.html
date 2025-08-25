@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contáctanos - Tu Empresa</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="contacto">
+
+  <!-- HEADER unificado -->
+  <header class="header">
+    <div class="header-container">
+      <nav class="menu-fijo" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="nuestro-equipo.html">Nuestro Equipo</a>
+        <a href="contacto.html" aria-current="page">Contáctanos</a>
+      </nav>
+      <img src="assets/logo.png" alt="Logo de Tu Empresa" class="logo" />
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main>
+    <section class="contacto-wrap" aria-label="Información de contacto y formulario">
+      <h2 class="contacto-title"><i class="fa-solid fa-envelope-open-text"></i> Contáctanos</h2>
+      <p class="contacto-sub">Estamos aquí para ayudarte. Atención en español y respuesta ágil.</p>
+
+      <div class="contacto-grid">
+        <!-- Tarjeta: Datos y CTAs -->
+<article class="contact-card">
+  <h3>Datos de contacto</h3>
+  <ul class="contact-list">
+    <li>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:consultasmigratorias@solucionesmigratoriasya.us">
+        consultasmigratorias@solucionesmigratoriasya.us
+      </a>
+    </li>
+    <li>
+      <i class="fa-solid fa-phone"></i>
+      <a href="tel:+12298468860">+1 229 846 8860</a>
+    </li>
+  </ul>
+
+  <div class="contact-cta">
+    <a href="tel:+12298468860" class="boton btn-call">
+      <i class="fa-solid fa-phone"></i> Llámanos
+    </a>
+
+    <a href="https://wa.me/12298468860?text=Hola,%20quisiera%20información%20sobre%20asesoría%20migratoria"
+       target="_blank" rel="noopener" class="boton btn-wa">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <!-- Botón Enviar correo (con asunto/cuerpo opcional) -->
+    <a
+      href="mailto:consultasmigratorias@solucionesmigratoriasya.us?subject=Consulta%20desde%20la%20web&body=Hola,%0D%0Aquisiera%20información%20sobre%20asesoría%20migratoria."
+      class="boton btn-outline">
+      <i class="fa-regular fa-envelope"></i> Enviar correo
+    </a>
+  </div>
+</article>
+
+
+        <!-- Tarjeta: Formulario simple -->
+        <article class="form-card">
+          <h3>Envíanos un mensaje</h3>
+          <form action="mailto:contacto@tuempresa.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="Nombre" type="text" required />
+              </div>
+              <div class="form-field">
+                <label for="correo">Correo electrónico</label>
+                <input id="correo" name="Correo" type="email" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" name="Teléfono" type="tel" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="Mensaje" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="boton btn-call"><i class="fa-solid fa-paper-plane"></i> Enviar mensaje</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP (usa estilos globales) -->
+  <a href="https://wa.me/12298468860" class="whatsapp-float" target="_blank" aria-label="Chatea con nosotros en WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Soluciones Migratorias. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+

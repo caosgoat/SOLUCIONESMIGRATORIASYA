@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - Tu Empresa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-container">
+    <!-- Botón Inicio a la izquierda -->
+    <nav class="menu-fijo">
+      <a href="index.html">Inicio</a>
+      <a href="nuestro-equipo.html">Nuestro Equipo</a>
+      <a href="contacto.html">Contáctanos</a>
+    </nav>
+    <!-- Logo a la derecha -->
+<img src="assets/logo.png" alt="Logo" class="logo">
+  </div>
+</header>
+
+ <main>
+  <!-- HERO / GALERÍA -->
+<section class="hero slider" id="heroSlider" aria-label="Galería destacada">
+  <div class="slides" id="slides">
+    <div class="slide">
+      <img src="assets/hero1.png" alt="Imagen principal 1" class="banner">
+    </div>
+    <div class="slide">
+      <img src="assets/hero2.png" alt="Imagen principal 2" class="banner">
+    </div>
+    <div class="slide">
+      <img src="assets/hero3.png" alt="Imagen principal 3" class="banner">
+    </div>
+  </div>
+
+  <!-- Controles DENTRO del hero -->
+  <button class="nav prev" id="prevBtn" aria-label="Anterior">❮</button>
+  <button class="nav next" id="nextBtn" aria-label="Siguiente">❯</button>
+
+  <!-- Paginación (dots) -->
+  <div class="dots" id="dots" aria-label="Paginación de la galería"></div>
+</section>
+
+
+
+    <!-- QUIÉNES SOMOS -->
+  <section id="quienes-somos" class="quienes-somos hero-qs" aria-label="Quiénes somos">
+  <div class="qs-overlay"></div>
+  <div class="qs-content">
+    <h2 class="qs-title">
+  <img src="assets/logo.png" alt="Tu Empresa" class="qs-title-logo">
+  <span>Quiénes Somos</span>
+</h2>
+    <p>
+      En nuestra agencia, somos tu aliado experto en procesos migratorios.
+      Con profundo conocimiento y experiencia, hemos ganado miles de casos
+      <strong>“imposibles”</strong> para residentes en EE.UU.
+    </p>
+    <p>
+      Brindamos asesoría integral y acompañamiento profesional,
+      operando en <strong>TODOS los estados</strong>. Confía en nuestro equipo
+      dedicado para hacer realidad tus aspiraciones migratorias.
+    </p>
+    <a href="contacto.html" class="boton">Agendar una consulta</a>
+  </div>
+</section>
+
+
+
+    <!-- NUESTROS SERVICIOS -->
+<section class="servicios servicios-slider" aria-label="Nuestros servicios">
+  <h2><i class="fas fa-scale-balanced"></i> Nuestros Servicios</h2>
+
+  <div class="cards-viewport">
+    <div class="cards-track" id="servicesTrack">
+      <!-- Servicio 1 -->
+      <article class="service-card">
+        <img class="service-media" src="assets/serv-residencias.png" alt="Asesoría en residencias americanas">
+        <div class="service-body">
+          <h3>Asesoría en residencias Americanas.</h3>
+          <p>Evaluación de elegibilidad, preparación de evidencias y acompañamiento integral para solicitudes de residencia por familia, empleo o inversión.</p>
+        </div>
+      </article>
+
+      <!-- Servicio 2 -->
+      <article class="service-card">
+        <img class="service-media" src="assets/serv-permiso-trabajo.png" alt="Permisos de trabajo">
+        <div class="service-body">
+          <h3>Permisos de trabajo.</h3>
+          <p>Selección de la categoría adecuada, formularios y respuesta a requerimientos para obtener o renovar tu autorización de empleo.</p>
+        </div>
+      </article>
+
+      <!-- Servicio 3 -->
+      <article class="service-card">
+        <img class="service-media" src="assets/serv-retencion-expulsion.png" alt="Retención de expulsión">
+        <div class="service-body">
+          <h3>Retención de expulsión.</h3>
+          <p>Estrategia y presentación de mociones para suspender la remoción mientras se resuelve tu caso, priorizando tu protección legal inmediata.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Controles (opcional, quedan ocultos en mobile si quieres) -->
+  <button class="srv-nav prev" id="srvPrev" aria-label="Anterior">❮</button>
+  <button class="srv-nav next" id="srvNext" aria-label="Siguiente">❯</button>
+
+  <!-- Puntos -->
+  <div class="srv-dots" id="srvDots" aria-label="Paginación"></div>
+</section>
+
+
+
+    <!-- ÁREAS EN LAS QUE SERVIMOS -->
+  <section class="areas-servicio" aria-label="Áreas en las que servimos">
+  <h2>Áreas en las que servimos</h2>
+
+  <!-- Solo el texto (subtítulo) -->
+  <div class="areas-head">
+    <p class="areas-sub">
+      Atendemos a clientes en todo Estados Unidos, con acompañamiento experto y en español.
+    </p>
+  </div>
+
+  <!-- Carrusel -->
+  <div class="areas-viewport edge-fade">
+    <div class="areas-track" id="areasTrack" role="list">
+      <!-- 1 -->
+      <article class="area-card" role="listitem" data-city="Miami" data-region="south">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        <h3>Miami, Florida</h3>
+        <p>Asesoría a comunidades cubanas, venezolanas y colombianas en el sur de Florida.</p>
+      </article>
+      <!-- 2 -->
+      <article class="area-card" role="listitem" data-city="Houston" data-region="south">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Houston, Texas</h3>
+        <p>Permisos de trabajo y defensa migratoria para familias mexicanas y centroamericanas.</p>
+      </article>
+      <!-- 3 -->
+      <article class="area-card" role="listitem" data-city="Los Ángeles" data-region="west">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Los Ángeles, California</h3>
+        <p>Asesoría legal para la comunidad latina más grande de EE.UU.</p>
+      </article>
+      <!-- 4 -->
+      <article class="area-card" role="listitem" data-city="Nueva York" data-region="northeast">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Nueva York, NY</h3>
+        <p>Regularización y defensa para inmigrantes caribeños y latinoamericanos.</p>
+      </article>
+      <!-- 5 -->
+      <article class="area-card" role="listitem" data-city="Chicago" data-region="midwest">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Chicago, Illinois</h3>
+        <p>Residencia y ciudadanía para familias de origen mexicano y sudamericano.</p>
+      </article>
+      <!-- 6 -->
+      <article class="area-card" role="listitem" data-city="Orlando" data-region="south">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Orlando, Florida</h3>
+        <p>Asesoría en procesos migratorios para Florida Central.</p>
+      </article>
+      <!-- 7 -->
+      <article class="area-card" role="listitem" data-city="Dallas" data-region="south">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Dallas, Texas</h3>
+        <p>Trámites de residencia y ciudadanía para comunidad latina en crecimiento.</p>
+      </article>
+      <!-- 8 -->
+      <article class="area-card" role="listitem" data-city="San Antonio" data-region="south">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>San Antonio, Texas</h3>
+        <p>Defensa y trámites migratorios en una ciudad históricamente latina.</p>
+      </article>
+      <!-- 9 -->
+      <article class="area-card" role="listitem" data-city="San Diego" data-region="west">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>San Diego, California</h3>
+        <p>Acompañamiento en procesos migratorios en la frontera con México.</p>
+      </article>
+      <!-- 10 -->
+      <article class="area-card" role="listitem" data-city="San José" data-region="west">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>San José, California</h3>
+        <p>Asesoría en Silicon Valley para profesionales y familias latinas.</p>
+      </article>
+      <!-- 11 -->
+      <article class="area-card" role="listitem" data-city="Nueva Jersey" data-region="northeast">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Nueva Jersey</h3>
+        <p>Apoyo en Newark, Elizabeth y Paterson para comunidades dominicanas y boricuas.</p>
+      </article>
+      <!-- 12 -->
+      <article class="area-card" role="listitem" data-city="Phoenix" data-region="west">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Phoenix, Arizona</h3>
+        <p>Residencia y protección legal contra expulsiones.</p>
+      </article>
+      <!-- 13 -->
+      <article class="area-card" role="listitem" data-city="Las Vegas" data-region="west">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Las Vegas, Nevada</h3>
+        <p>Asesoría migratoria a familias latinas en el área metropolitana.</p>
+      </article>
+      <!-- 14 -->
+      <article class="area-card" role="listitem" data-city="Denver" data-region="west">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Denver, Colorado</h3>
+        <p>Servicios migratorios a comunidades mexicanas y centroamericanas.</p>
+      </article>
+      <!-- 15 -->
+      <article class="area-card" role="listitem" data-city="Washington D.C." data-region="northeast">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Washington D.C. &amp; Maryland</h3>
+        <p>Defensa y regularización en el área metropolitana.</p>
+      </article>
+      <!-- 16 -->
+      <article class="area-card" role="listitem" data-city="Boston" data-region="northeast">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Boston, Massachusetts</h3>
+        <p>Asesoría para comunidades dominicanas, puertorriqueñas y centroamericanas.</p>
+      </article>
+      <!-- 17 -->
+      <article class="area-card" role="listitem" data-city="Philadelphia" data-region="northeast">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Philadelphia, Pennsylvania</h3>
+        <p>Servicios legales para latinos en el noreste del país.</p>
+      </article>
+      <!-- 18 -->
+      <article class="area-card" role="listitem" data-city="Charlotte" data-region="south">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Charlotte, Carolina del Norte</h3>
+        <p>Apoyo migratorio a familias mexicanas y centroamericanas.</p>
+      </article>
+      <!-- 19 -->
+      <article class="area-card" role="listitem" data-city="Austin" data-region="south">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Austin, Texas</h3>
+        <p>Asesoría para estudiantes, profesionales y familias en Texas Central.</p>
+      </article>
+      <!-- 20 -->
+      <article class="area-card" role="listitem" data-city="Tampa" data-region="south">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Tampa, Florida</h3>
+        <p>Asistencia legal a comunidades latinas del área de la bahía.</p>
+      </article>
+    </div>
+  </div>
+
+  <!-- Barra de progreso -->
+  <div class="areas-progress" id="areasProgress" aria-hidden="true"><span></span></div>
+
+  <!-- Controles -->
+  <button class="areas-nav prev" id="areasPrev" aria-label="Anterior">❮</button>
+  <button class="areas-nav next" id="areasNext" aria-label="Siguiente">❯</button>
+  <div class="areas-dots" id="areasDots" aria-hidden="true"></div>
+</section>
+
+
+
+   <!-- TESTIMONIOS -->
+<section class="testimonios" aria-label="Testimonios de clientes">
+  <h2><i class="fa-solid fa-comments"></i> Testimonios</h2>
+
+  <div class="testimonial-grid">
+    <!-- Testimonio 1 -->
+    <article class="testimonial-card">
+      <div class="testimonial-header">
+        <div class="avatar" aria-hidden="true">MG</div>
+        <div>
+          <h3 class="testimonial-name">María González</h3>
+          <div class="stars" aria-label="5 de 5">
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <blockquote class="testimonial-text">
+        “Solicité mi residencia americana por matrimonio y estaba muy nerviosa por los tiempos
+        y entrevistas. El equipo me acompañó en cada paso, revisó mis evidencias y preparó mi
+        caso con detalle. ¡Aprobada sin requerimientos adicionales! Los recomiendo totalmente.”
+      </blockquote>
+      <footer class="testimonial-tag">Residencia Americana (Green Card)</footer>
+    </article>
+
+    <!-- Testimonio 2 -->
+    <article class="testimonial-card">
+      <div class="testimonial-header">
+        <div class="avatar" aria-hidden="true">CP</div>
+        <div>
+          <h3 class="testimonial-name">Carlos Pérez</h3>
+          <div class="stars" aria-label="5 de 5">
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <blockquote class="testimonial-text">
+        “Tenía una oferta laboral y necesitaba el permiso de trabajo lo antes posible.
+        Me explicaron opciones, organizaron mi solicitud y respondieron a cada duda con rapidez.
+        El permiso llegó antes de lo esperado y pude empezar sin retrasos.”
+      </blockquote>
+      <footer class="testimonial-tag">Permiso de Trabajo</footer>
+    </article>
+
+    <!-- Testimonio 3 -->
+    <article class="testimonial-card">
+      <div class="testimonial-header">
+        <div class="avatar" aria-hidden="true">AR</div>
+        <div>
+          <h3 class="testimonial-name">Ana Rodríguez</h3>
+          <div class="stars" aria-label="5 de 5">
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <blockquote class="testimonial-text">
+        “Estaba enfrentando una orden de expulsión y pensé que no había salida. El equipo
+        se movió de inmediato, presentó la defensa correcta y me mantuvo informada en todo
+        momento. Lograron detener la expulsión y hoy sigo con mi familia. Eternamente agradecida.”
+      </blockquote>
+      <footer class="testimonial-tag">Defensa y Retención de Expulsión</footer>
+    </article>
+  </div>
+</section>
+
+   
+
+  <!-- POR QUÉ ELEGIRNOS -->
+<section class="por-que-elegirnos" id="por-que-elegirnos" aria-label="Por qué elegirnos">
+  <div class="elegir-wrap">
+    <h2><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i> ¿Por qué elegirnos?</h2>
+    <p class="elegir-sub">
+      Agencia migratoria con enfoque legal, atención en español y cobertura nacional.
+    </p>
+
+    <div class="elegir-badges">
+      <span class="badge"><i class="fa-solid fa-briefcase"></i> 10+ años</span>
+      <span class="badge"><i class="fa-solid fa-people-group"></i> Equipo dedicado</span>
+      <span class="badge"><i class="fa-solid fa-earth-americas"></i> 50 estados</span>
+    </div>
+
+    <div class="elegir-grid">
+      <article class="elegir-card">
+        <i class="fa-solid fa-gavel" aria-hidden="true"></i>
+        <h3>Estrategia legal personalizada</h3>
+        <p>Analizamos tu caso y construimos una ruta migratoria realista, con riesgos y tiempos claros.</p>
+      </article>
+
+      <article class="elegir-card">
+        <i class="fa-solid fa-file-shield" aria-hidden="true"></i>
+        <h3>Documentación impecable</h3>
+        <p>Checklist, revisión y armado de evidencias para minimizar rechazos y requerimientos.</p>
+      </article>
+
+      <article class="elegir-card">
+        <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+        <h3>Acompañamiento integral</h3>
+        <p>Te guiamos en cada etapa: formularios, citas, entrevistas y seguimiento posterior.</p>
+      </article>
+
+      <article class="elegir-card">
+        <i class="fa-solid fa-language" aria-hidden="true"></i>
+        <h3>Atención en español</h3>
+        <p>Comunicación clara y cercana para que entiendas cada paso y tomes decisiones informadas.</p>
+      </article>
+
+      <article class="elegir-card">
+        <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+        <h3>Respuesta ágil</h3>
+        <p>Canales directos y tiempos de respuesta cortos para mover tu trámite sin demoras.</p>
+      </article>
+
+      <article class="elegir-card">
+        <i class="fa-solid fa-earth-americas" aria-hidden="true"></i>
+        <h3>Cobertura nacional</h3>
+        <p>Operamos en los 50 estados: te asistimos estés donde estés en EE. UU.</p>
+      </article>
+    </div>
+
+    <a href="contacto.html" class="boton">Solicitar consulta</a>
+  </div>
+</section>
+
+    
+
+    <!-- NECESITAS AYUDA -->
+<section class="necesitas-ayuda" aria-label="¿Necesitas ayuda?">
+  <div class="help-overlay"></div>
+
+  <div class="help-wrap">
+    <h2><i class="fa-solid fa-headset" aria-hidden="true"></i> ¿Necesitas ayuda?</h2>
+    <p class="help-sub">
+      Estamos listos para evaluar tu caso y darte una ruta clara. Atención en español y cobertura en todos los estados.
+    </p>
+
+    <div class="help-cta">
+      <a href="tel:+573001234567" class="boton btn-phone">
+        <i class="fa-solid fa-phone"></i> Llámanos
+      </a>
+      <a href="https://wa.me/573001234567?text=Hola,%20quisiera%20información%20sobre%20asesoría%20migratoria"
+         target="_blank" rel="noopener" class="boton btn-wa">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="contacto.html" class="boton btn-alt">
+        <i class="fa-regular fa-envelope"></i> Contáctanos
+      </a>
+    </div>
+
+    <ul class="help-bullets">
+      <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Evaluación inicial</li>
+      <li><i class="fa-solid fa-comments" aria-hidden="true"></i> En español</li>
+      <li><i class="fa-solid fa-flag-usa" aria-hidden="true"></i> 50 estados</li>
+    </ul>
+  </div>
+</section>
+
+  
+
+    <!-- NUESTRO EQUIPO -->
+    <section class="busqueda">
+      <h2><i class="fas fa-user-friends"></i> Conoce a nuestro equipo</h2>
+      <p>Descubre quiénes somos y cómo trabajamos para ti</p>
+      <a href="nuestro-equipo.html" class="boton">Ver nuestro equipo</a>
+    </section>
+  </main>
+
+   <!-- Aquí termina el contenido de tu página -->
+  <footer>
+    <p>© 2025 Soluciones Migratorias. Todos los derechos reservados.</p>
+  </footer>
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a href="https://wa.me/12298468860" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chatea con nosotros en WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<script>
+  // HERO: slider (auto + flechas + dots) aislado
+  (function heroSlider(){
+    const slider   = document.getElementById('heroSlider');
+    if(!slider) return; // solo corre si existe el hero
+
+    const track    = document.getElementById('slides');
+    const slides   = Array.from(track.querySelectorAll('.slide'));
+    const prevBtn  = document.getElementById('prevBtn');
+    const nextBtn  = document.getElementById('nextBtn');
+    const dotsWrap = document.getElementById('dots');
+
+    let index = 0;
+    const total = slides.length;
+
+    // Dots
+    dotsWrap.innerHTML = '';
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      if(i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(dot);
+    });
+
+    function render(){
+      slides.forEach((s, i) => s.style.display = (i === index ? 'block' : 'none'));
+      [...dotsWrap.children].forEach((d, i) => d.classList.toggle('active', i === index));
+    }
+
+    function prev(){ index = (index - 1 + total) % total; render(); restartAuto(); }
+    function next(){ index = (index + 1) % total; render(); restartAuto(); }
+    function goTo(i){ index = i % total; render(); restartAuto(); }
+
+    prevBtn.addEventListener('click', prev);
+    nextBtn.addEventListener('click', next);
+
+    // Auto
+    let auto = null;
+    const INTERVAL = 5000;
+    function startAuto(){ if(!auto) auto = setInterval(next, INTERVAL); }
+    function stopAuto(){ if(auto){ clearInterval(auto); auto = null; } }
+    function restartAuto(){ stopAuto(); startAuto(); }
+
+    // Pausa al hover (desktop)
+    slider.addEventListener('mouseenter', stopAuto);
+    slider.addEventListener('mouseleave', startAuto);
+
+    // Init
+    render();
+    startAuto();
+  })();
+</script>
+
+  
+<script src="script.js"></script>
+</body>
+</html>
