@@ -1453,3 +1453,34 @@ footer a:hover {
   .menu-fijo{ gap: 10px; }
   .menu-fijo a{ font-size: .82rem; }
 }
+/* ===========================
+   FIX PC: evitar que el email se salga en tarjetas de contacto
+   (Pegar al final de style.css)
+   =========================== */
+@media (min-width: 901px) {
+  /* Asegura que los contenedores puedan encoger dentro de flex/grid */
+  .contact-card,
+  .contact-list,
+  .contact-list li {
+    min-width: 0;
+  }
+
+  /* El ícono no se expande; el enlace (email) ocupa el resto */
+  .contact-list li i {
+    flex: 0 0 auto;
+  }
+
+  /* El email se adapta al ancho disponible y muestra "…" si es largo */
+  .contact-list li a[href^="mailto:"],
+  .contact-card a[href^="mailto:"],
+  .contact-list li .email {
+    flex: 1 1 auto;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+  }
+}
+
