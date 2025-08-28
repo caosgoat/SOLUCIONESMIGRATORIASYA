@@ -1483,4 +1483,38 @@ footer a:hover {
     vertical-align: bottom;
   }
 }
+/* ===========================
+   FIX SOLO EN PC: email no se sale de la tarjeta
+   (Agregar al final de style.css)
+   =========================== */
+@media (min-width: 901px) {
+  /* 1) Los contenedores deben poder encoger dentro de grid/flex */
+  .team-card,
+  .team-card *:where(.contact-list, .contact-list li, .content) {
+    min-width: 0;
+  }
+
+  /* 2) Si el contacto está en lista con ícono, el ícono no crece y el enlace ocupa el resto */
+  .contact-list li { 
+    min-width: 0;            /* clave para ellipsis dentro de flex */
+  }
+  .contact-list li i {
+    flex: 0 0 auto;          /* el ícono no se expande */
+  }
+
+  /* 3) El email se corta con “…” si es largo */
+  .team-card a[href^="mailto:"],
+  .team-card .email,
+  .contact-card a[href^="mailto:"],
+  .contact-list a[href^="mailto:"] {
+    flex: 1 1 auto;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;      /* mantén una sola línea con "…" */
+    vertical-align: bottom;
+  }
+}
+
 
