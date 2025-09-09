@@ -1,0 +1,303 @@
+[
+  {
+    "Nombre": "Valeria García Hernández",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto1.jpg",
+    "Skills": "Asesoría en procesos migratorios",
+    "Email": "valeriagarciahernandez@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Lucía Hernández",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto2.jpg",
+    "Skills": "Interpretación de leyes migratorias",
+    "Email": "luciahernandez@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Susana González Hernández",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto3.jpg",
+    "Skills": "Redacción de documentos legales",
+    "Email": "directora.susanagonzalezhernandez@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Martha Sánchez",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto4.jpg",
+    "Skills": "Litigación en casos migratorios",
+    "Email": "marthasanchez@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Abril Fernanda González Morales",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto5.jpg",
+    "Skills": "Análisis de sentencias migratorias",
+    "Email": "abrilfernandagonzales@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Jimena Castillo Rincón",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto6.jpg",
+    "Skills": "Preparación de entrevistas consulares",
+    "Email": "jimenacastillorincon@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Victoria Pérez",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto7.jpg",
+    "Skills": "Defensa de derechos humanos",
+    "Email": "victoriaperezcruz@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Luis Hernández Ávila",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto8.jpg",
+    "Skills": "Gestión de visados",
+    "Email": "luishernandezavila@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Amelia Hernández Ortiz",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto9.jpg",
+    "Skills": "Conocimiento de tratados internacionales",
+    "Email": "ameliahernandezortiz@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "José Ramírez Pérez",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto10.jpg",
+    "Skills": "Derecho comparado",
+    "Email": "joseramirezperez@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Miguel Jiménez García",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto11.jpg",
+    "Skills": "Asesoría en naturalización",
+    "Email": "migueljimenezgarcia@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Victoria López Cruz",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto12.jpg",
+    "Skills": "Apelaciones migratorias",
+    "Email": "victorialopez@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Carlos Alberto del Monte García",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto13.jpg",
+    "Skills": "Gestión de permisos de residencia",
+    "Email": "carlosalbertodelmonte@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Milagros García Vera",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto14.jpg",
+    "Skills": "Derecho administrativo",
+    "Email": "milagrosgarciavera@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Fabiana Estrada López",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto15.jpg",
+    "Skills": "Investigación jurídica",
+    "Email": "fabianaestradalopez@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Pablo Hernández García",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto16.jpg",
+    "Skills": "Procesos de asilo y refugio",
+    "Email": "pablohernandezgarcia@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Ana Sofía Hernández Rodríguez",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto17.jpg",
+    "Skills": "Negociación de acuerdos migratorios",
+    "Email": "anasofiahernandez@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Vanessa Franco",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto18.jpg",
+    "Skills": "Mediación en conflictos migratorios",
+    "Email": "vanessafranco@solucionesmigratorias.us"
+  },
+  {
+    "Nombre": "Silvia Reyes Guzmán.",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto19.jpg",
+    "Skills": "Gestión de ciudadanía",
+    "Email": "silviareyesguzman@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Valeria López",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto20.jpg",
+    "Skills": "Análisis de políticas públicas",
+    "Email": "valerialopez@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Gladys Daniels",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto21.jpg",
+    "Skills": "Capacitación en normativas migratorias",
+    "Email": "gladysdaniels@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Ana Hernández",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto22.jpg",
+    "Skills": "Representación ante cortes migratorias",
+    "Email": "anahernandez@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Anthony Gálvez",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto23.jpg",
+    "Skills": "Comunicación con entidades consulares",
+    "Email": "anthonygalvez@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Regina Díaz",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto24.jpg",
+    "Skills": "Ética profesional en migración",
+    "Email": "reginadiaz@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Rafael Sánchez",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto25.jpg",
+    "Skills": "Defensa de migrantes vulnerables",
+    "Email": "rafaelsanchez@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Verónica Cruz",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto26.jpg",
+    "Skills": "Conocimiento de derecho laboral migrante",
+    "Email": "veronicacruz@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Victoria cruz",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto27.jpg",
+    "Skills": "Redacción de contratos internacionales",
+    "Email": "victoriacruz@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Mariana Leon a",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto28.jpg",
+    "Skills": "Atención al cliente migratorio",
+    "Email": "marianaleon.a@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "David thompson",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto29.jpg",
+    "Skills": "Gestión documental migratoria",
+    "Email": "davidthompson@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Guillermo Reyes",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto30.jpg",
+    "Skills": "Auditoría de casos migratorios",
+    "Email": "guillermoreyes@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Barbara gonzalez",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto31.jpg",
+    "Skills": "Interpretación de tratados bilaterales",
+    "Email": "barbaragonzalez@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Isela Fernández",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto32.jpg",
+    "Skills": "Litigación internacional",
+    "Email": "iselafernandez@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "María Victoria cruz",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto33.jpg",
+    "Skills": "Planeación estratégica en migración",
+    "Email": "mariavictoriacruz@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Mariana García",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto34.jpg",
+    "Skills": "Resolución alternativa de conflictos",
+    "Email": "marianagarcia@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Lucía López",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto35.jpg",
+    "Skills": "Derecho constitucional aplicado a migración",
+    "Email": "lucialopez@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Ana Domínguez",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto36.jpg",
+    "Skills": "Tramitación de visas de trabajo",
+    "Email": "anadominguez@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "Cinthya Solis",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto37.jpg",
+    "Skills": "Protección internacional de refugiados",
+    "Email": "cinthyasolis@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "samantha Rodríguez",
+    "Rol": "abogada especialista en migración",
+    "Foto": "assets/foto38.jpg",
+    "Skills": "Asesoría en movilidad internacional",
+    "Email": "samantharodriguez@solucionesmigratoriaslatinos.us"
+  },
+  {
+    "Nombre": "José Luis Rodríguez",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto39.jpg",
+    "Skills": "Asesoría legal en procesos migratorios",
+    "Email": "joseluisrodriguez@solucionesmigratoriasya.us"
+  },
+  {
+    "Nombre": "Carlos Andrés Morales",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto40.jpg",
+    "Skills": "Tramitación de visados y permisos",
+    "Email": "carlosandresmorales@solucionesmigratoriasya.us"
+  },
+  {
+    "Nombre": "Martín Salgado",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto41.jpg",
+    "Skills": "Representación en cortes migratorias",
+    "Email": "martinsalgado@solucionesmigratoriasya.us"
+  },
+  {
+    "Nombre": "Brian Witman",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto42.jpg",
+    "Skills": "Asesoría en naturalización y ciudadanía",
+    "Email": "brianwitman@solucionesmigratoriasya.us"
+  },
+  {
+    "Nombre": "Juan Aguilar Díaz",
+    "Rol": "abogado especialista en migración",
+    "Foto": "assets/foto43.jpg",
+    "Skills": "Gestión de residencia y permisos laborales",
+    "Email": "juanaguilardiaz@solucionesmigratoriasya.us"
+  }
+]
